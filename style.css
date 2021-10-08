@@ -12,7 +12,7 @@ header {
     top: 0;
     left: 0%;
     width: 100%;
-    padding: 15px;
+    padding: 22px;
     text-align: left;
 }
 
@@ -23,7 +23,7 @@ header {
 
 .navegacao {
     position: fixed;
-    margin-top: 45px;
+    margin-top: 28px;
     margin-left: 70%;
 }
 
@@ -32,21 +32,26 @@ a {
   font-family: monospace;
   font-size: 21px;
   color: #820AD1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a777c7;
 }
 
 a:active {
-  color: #a777c7;
+  color: #820AD1;
 }
 
 img {
     border-radius: 50% 23%;
-    width: 250px;
+    width: 230px;
     margin-top: 260px;
     margin-bottom: 30px;
 }
 
 .nome {
-  font-size: xx-large;
+  font-size: 35px;
 }
 
 .inicio {
@@ -59,7 +64,7 @@ img {
 
 .titulo {
 margin-top: 100px;
-font-size: 35px;
+font-size: 40px;
 padding-top: 200px;
 }
 
@@ -79,28 +84,48 @@ padding-top: 200px;
   color: white;
 }
 
-.projetos #projects{
-  margin-top: 1px;
+.projetos #projects {
   font-size: 35px;
 }
 
-section div {
-  width: 25%;
-  margin-top: 130px;
+.conteudo-projeto {
+ margin: 75px 30px 30px 30px;
+ width: 23%;
   text-align: center;
   background-color: white;
   padding: 20px 10px;
   border-radius: 5%;  
-}
+  display: inline-block;
+ }
 
+/*  .div-projeto {
+  overflow-x: scroll;
+ }
+ */
 .contact h2 {
   margin-top: 150px;
-  margin-bottom: 65px;
+  margin-bottom: 75px;
 }
 
 section a {
   color: #000;
-  margin: 0 60px;
+  background-color: #a777c7;
+  margin: 0 70px;
+  padding: 10px 15px;
+  border: 1px solid white;
+  border-radius: 8%;
+  text-decoration: none;
+}
+section a:hover {
+  padding: 12px 17px;
+  margin: 0 68px;
+  background-color: #ba52ff;
+  color: #000;
+}
+
+section a:active {
+  background-color: black;
+  color: white;
 }
 
 footer {
@@ -110,7 +135,8 @@ footer {
   right: 0;
   left: 0;
   padding: 5px;
-  margin-top: 159px;
+  margin-top: 170px;
+  line-height: 50%;
 }
 
 .obrigado {
