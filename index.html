@@ -5,36 +5,44 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <title>JVCG</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <header>
-<a class="bemvindo" href="#inicio">Bem Vindo!</a>
-  </header>
+<body class="font-monospace">
 
-  <nav>
-    <div class="navegacao">
-      <a href="#sobre">Sobre mim</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato">Contato</a>
-    </div>
-  </nav>
+  <section class="menu-container">
+    <nav class="menu">
+      <a class="bemvindo" href="#inicio">Bem Vindo!</a>
+      <section>
+        <a href="#sobre">Sobre mim</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </section>
+    </nav>
+  </section>
 
-  <section id="inicio">
-    <img src="WhatsApp Image 2021-09-21 at 11.17.01 AM.jpeg" alt="">
+  <section id="inicio" class="text-center">
+    <img class="img-inicial" src="WhatsApp Image 2021-09-21 at 11.17.01 AM.jpeg" alt="">
     <h1 class="nome">Joao Victor Cabral Goncalves</h1>
   </section>
 
 
   <section class="sobre-mim">
     <h1 id="sobre" class="titulo">Sobre mim</h1>
-    <h1 class="ola">Ola,</h1>
-    <P>Me chamo João Victor, tenho 18 anos e nasci em Campo Grande MS. Atualmente estou cursando Desenvolvimento de
-      Software pela Trybe. <br>
-      Sempre disposto a aprender mais e crescer profissionalmente.
-    </P>
+    <div class="conteudo-sobremim">
+      <div>
+        <h1 class="ola">Ola,</h1>
+          <P>Me chamo João Victor, tenho 18 anos e nasci em Campo Grande MS. Atualmente estou cursando Desenvolvimento de
+            Software pela Trybe. <br>
+            Sempre disposto a aprender mais e crescer profissionalmente.
+          </P>
+      </div>
+      <img class="img-sobremim" src="WhatsApp Image 2021-09-21 at 11.17.01 AM.jpeg" alt="">
+    </div>
   </section>
 
   <section class="projects">
@@ -54,10 +62,6 @@
           123
           123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123
           123
-          123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123
-          123
-          123 123 123 123 123 123 123 123 123 123 123 123
-
         </p>
       </div>
 
@@ -74,10 +78,6 @@
           123
           123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123
           123
-          123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123
-          123
-          123 123 123 123 123 123 123 123 123 123 123 123
-
         </p>
       </div>
 
@@ -94,30 +94,28 @@
           123
           123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123
           123
-          123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123
-          123
-          123 123 123 123 123 123 123 123 123 123 123 123
-
         </p>
       </div>
     </div>
   </section>
 
-  <section class="contact">
+  <section class="contact text-center mb-5">
     <h1 id="contato" class="titulo">Contato</h1>
     <h2>Onde me encontrar?</h2>
 
-    <a href="https://www.linkedin.com/in/joaovcgoncalves/" target="_blank">Linkedin</a>
+    <a class="btn btn-outline-secondary mb-5 me-5" href="https://www.linkedin.com/in/joaovcgoncalves/"
+      target="_blank">Linkedin</a>
 
-    <a href="https://github.com/jvictorcabral" target="_blank">GitHub</a>
+    <a class="btn btn-outline-secondary mb-5" href="https://github.com/jvictorcabral" target="_blank">GitHub</a>
 
-    <a href="https://www.instagram.com/jvictor_cabral/" target="_blank">Instagram</a>
+    <a class="btn btn-outline-secondary mb-5 ms-5" href="https://www.instagram.com/jvictor_cabral/"
+      target="_blank">Instagram</a>
 
   </section>
 
-  <footer>
-    <p class="obrigado">Obrigado por visitar meu site</p>
-    <p>Email: joaovicotrcgjvcg@gmail.com</p>
+  <footer class="text-center p-3 mb-0 bg-dark text-white">
+    <p class="fs-4">Obrigado por visitar meu site</p>
+    <p class="mb-0">Email: joaovicotrcgjvcg@gmail.com</p>
   </footer>
 
 </body>
