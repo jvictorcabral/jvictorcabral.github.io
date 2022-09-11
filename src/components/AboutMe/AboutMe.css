@@ -1,0 +1,28 @@
+#about-me {
+  background-color: #ECB365;
+}
+
+.about-content {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.paragraphs h1 {
+  font-size: 30px;
+}
+
+.paragraphs p {
+  font-size: 20px;
+  margin: 10px 10% 10px 0;
+}
+
+.about-content img {
+  height: 50vh;
+  border-radius: 100px 50px;
+}

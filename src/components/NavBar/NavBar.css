@@ -1,0 +1,129 @@
+.nav-bar {
+  background-color: #041C32;
+  box-shadow: -2px 0px 15px #0000004b;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  max-width: 500px;
+  opacity: 100%;
+  overflow-y: hidden;
+  padding: 0;
+  position: fixed;
+  text-align: left;
+  top: 0px;
+  right: 0px;
+	transition-duration: 600ms;
+  transition-property: all;
+
+}
+
+.nav-bar.out {
+  max-width: 0;
+  opacity: 0;
+}
+
+.nav-bar ul {
+  opacity: 100%;
+  transition-property: all;
+	transition-duration: 300ms;
+}
+
+.nav-bar.out ul {
+  opacity: 0;
+}
+
+
+.nav-bar li {
+  background-color: transparent;
+  box-shadow: 0px 3px 10px transparent;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  transition: background-color 700ms;
+  transition: box-shadow 700ms;
+}
+
+.nav-bar li:hover {
+  background-color: #04293A;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px #0000004b;
+  cursor: pointer;
+}
+
+.nav-bar a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0.5rem;
+  padding: 2rem 10px;
+  padding-left: 2.4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu {
+  border: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  position: fixed;
+  right: 1vw;
+  z-index: 10;
+  filter: invert(100%);
+
+}
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+@keyframes in {
+  0% {
+    transform: translate(400px);
+  }
+  100% {
+  }
+}
+
+@keyframes out {
+  0% {
+  }
+  100% {
+    transform: translate(400px);
+  }
+}
+  

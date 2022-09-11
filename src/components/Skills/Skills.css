@@ -1,0 +1,20 @@
+#skills {
+  background-color: #064663;
+  color: white;
+
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.flex-item {
+  text-align: center;
+  list-style: none;
+  font-weight: 900;
+  font-size: 28px;
+  margin: 30px 3.5%;
+}
