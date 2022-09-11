@@ -11,9 +11,9 @@ const Skills = () => {
           <li className="flex-item">CSS</li>
           <li className="flex-item">JavaScript</li>
           <li className="flex-item">ReactJS</li>
+          <li className="flex-item">Jest</li>
           <li className="flex-item">React Redux</li>
           <li className="flex-item">React Hoocks</li>
-          <li className="flex-item">Jest</li>
           <li className="flex-item">Docker</li>
           <li className="flex-item">MySQL</li>
           <li className="flex-item">Node.js</li>

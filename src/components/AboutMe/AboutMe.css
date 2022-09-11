@@ -7,6 +7,10 @@
   flex-direction: column;
 }
 
+.paragraphs {
+  margin: 15px 0;
+}
+
 .paragraphs h1 {
   font-size: 25px;
   margin-top: 10px;
