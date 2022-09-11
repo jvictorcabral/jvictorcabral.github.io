@@ -1,6 +1,7 @@
 #skills {
   background-color: #064663;
   color: white;
+  height: 100vh;
 
 }
 
@@ -8,13 +9,24 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 100px;
 }
 
 .flex-item {
-  text-align: center;
-  list-style: none;
   font-weight: 900;
-  font-size: 28px;
+  list-style: none;
   margin: 30px 3.5%;
+  text-align: center;
+  font-size: 22px;
+
+
+}
+
+@media screen and (min-width: 768px) {
+  .flex-container {
+    margin-bottom: 100px;
+  }
+
+  .flex-item {
+    font-size: 28px;
+  }
 }

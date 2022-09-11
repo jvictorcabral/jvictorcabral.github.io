@@ -1,9 +1,8 @@
 section {
   display: flex;
   flex-direction: column;
-  padding: 55px 15%;
+  padding: 55px 8%;
   margin: 0;
-  height: 100vh;
   align-content: space-evenly;
   justify-content: space-between;
 }
@@ -11,6 +10,20 @@ section {
 .h1-title {
   display: flex;
   justify-content: center;
-  margin: 40px;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
+  margin: 30px;
+
+}
+
+
+@media screen and (min-width: 768px) {
+  section {
+  padding: 55px 10%;
+  height: 100vh;
+
+  }
+
+  .h1-title {
+    font-size: 2.5rem;
+  }
 }

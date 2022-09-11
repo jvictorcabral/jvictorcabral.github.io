@@ -7,7 +7,7 @@
   height: 100vh;
   justify-content: center;
   max-width: 500px;
-  opacity: 100%;
+  opacity: 95%;
   overflow-y: hidden;
   padding: 0;
   position: fixed;
@@ -16,6 +16,7 @@
   right: 0px;
 	transition-duration: 600ms;
   transition-property: all;
+  z-index: 9;
 
 }
 
@@ -124,6 +125,13 @@
   }
   100% {
     transform: translate(400px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu svg {
+    width: 70px;
+    height: 70px;
   }
 }
   

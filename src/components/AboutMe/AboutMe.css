@@ -4,13 +4,7 @@
 
 .about-content {
   display: flex;
-  margin-bottom: 100px;
-}
-
-.paragraphs {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .paragraphs h1 {
@@ -18,11 +12,37 @@
 }
 
 .paragraphs p {
-  font-size: 20px;
-  margin: 10px 10% 10px 0;
+  font-size: 22px;
+  margin: 10px 0;
 }
 
 .about-content img {
-  height: 50vh;
   border-radius: 100px 50px;
+  margin-top: 20px;
+  /* height: 50vh; */
+}
+
+@media screen and (min-width: 768px){
+  .about-content {
+    display: flex;
+    margin-bottom: 100px;
+    flex-direction: row;
+  }
+
+  .about-content img {
+  height: 50vh;
+  margin-left: 5%;
+  }
+  
+  .paragraphs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .paragraphs h1 {
+    font-size: 30px;
+  }
+  
+  
 }
