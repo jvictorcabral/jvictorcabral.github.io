@@ -1,0 +1,156 @@
+.no-project {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 38vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 310px;
+  width: 240px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #000;
+  transition: 0.4s ease-out;
+  position: relative;
+  padding: 20px 25px;
+  left: 0px;
+  transform: rotate3d(1, 1, 1, 10deg);
+}
+
+.card:not(:first-child) {
+  margin-top: -75px;
+}
+
+.card:hover {
+  transform: scaleX(1.1) scaleY(1.1);
+  box-shadow: 0 0 20px #064663;
+  z-index: 8;
+  transition: 0.4s ease-out;
+}
+.card:not(.card):hover {
+  background-color: tomato;
+  
+}
+
+.card:hover ~ .card {
+  position: relative;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+}
+
+.languages {
+  margin-top: 25px;
+}
+
+.card p {
+  color: rgb(179, 179, 179);
+  display: flex;
+  margin: 1px 0 5px;
+}
+
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 10%;
+  height: 5px;
+  width: 80%;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    #041c32 0%,
+    #064663 50%,
+    rgba(255, 186, 0, 1) 100%
+  );
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 100%;
+  transition: 0.4s ease-out;
+}
+
+.links-projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.links-projects a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+  font-weight: 900;
+}
+
+.project-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #041c32;
+}
+
+.project-button:hover {
+  box-shadow: 0px 0px 10px #064663;
+}
+
+.project-button a {
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    margin: 0 0 100px ;
+  }
+  
+  .card:hover {
+    transform: translateY(-20px);
+    transform: scaleX(1.1) scaleY(1.1);
+    transition: 0.4s ease-out;
+  }
+  
+  .card:hover ~ .card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+  }
+
+  .card:not(:first-child) {
+    margin-left: -50px;
+    margin-top: 0;
+  }
+}
