@@ -1,6 +1,9 @@
 #skills {
   background-color: #064663;
-  /* background-color: red; */
+  color: white;
+}
+
+#skills .h1-title {
   color: white;
 }
 

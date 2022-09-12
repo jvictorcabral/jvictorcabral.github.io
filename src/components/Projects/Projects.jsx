@@ -1,4 +1,5 @@
 import React from "react";
+import ProjectCard from "./ProjectCard";
 import "./Projects.css"
 
 const Projects = () => {
@@ -6,7 +7,7 @@ const Projects = () => {
   return (
     <section id="projects">
         <h1 className="h1-title">Projetos</h1>
-        <div></div>
+        <ProjectCard />
       </section>
   )
 }

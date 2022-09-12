@@ -6,6 +6,11 @@
   height: 100vh;
 }
 
+#contact .h1-title {
+  color: white;
+
+}
+
 .links {
   width: 100%;
   display: flex;
