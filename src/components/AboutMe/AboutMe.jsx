@@ -13,19 +13,15 @@ const AboutMe = () => {
               João Victor
             </h1>
             <p>
-              Tenho 19 anos e nasci em Campo Grande
-              MS. Atualmente estou cursando Desenvolvimento Web Full Stack pela
-              Trybe.
+              Tenho 19 anos e nasci em Campo Grande - MS. Atualmente estou cursando Desenvolvimento Web Full Stack pela Trybe.
             </p>
 
             <p>
-              Sou um jovem apaixonado por aprender coisas novas, buscando
-              sempre melhorias pessoal e profissionalmente.
+              Sou um jovem apaixonado por aprender coisas novas, buscando sempre melhorias pessoal e profissionalmente.
             </p>
 
             <p>
-              Trabalho e acredito em ações que possam gerar um impacto positivo
-              na vida das pessoas.
+              Trabalho e acredito em ações que possam gerar um impacto positivo na vida das pessoas.
             </p>
           </div>
           <img src={aboutMeImg} alt="minha foto" />
