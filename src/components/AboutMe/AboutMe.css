@@ -1,5 +1,16 @@
+:root {
+
+  --background: #000000;
+
+  --ligth-background: #0d0d0d;
+
+  --purple: #4c0159;
+  
+  --shadow-purple: #700070a8;
+}
+
 #about-me {
-  background-color: #0d0d0d;
+  background-color: var(--ligth-background);
 }
 
 .about-content {
@@ -11,11 +22,6 @@
   margin: 30px 0;
 }
 
-/* .paragraphs h1 {
-  font-size: 25px;
-  margin-top: 10px;
-} */
-
 .paragraphs p {
   font-size: 1.25em;
   margin: 10px 0;
@@ -24,12 +30,11 @@
 
 .about-content img {
   border-radius: 100px 50px;
-  /* height: 50vh; */
-  border: 5px solid #590159;
+  border: 5px solid var(--purple);
 }
 
 .about-content img:hover {
-  box-shadow: 0 0 20px #700070a8;
+  box-shadow: 0 0 20px var(--shadow-purple);
 }
 
 @media screen and (min-width: 768px){
@@ -54,7 +59,6 @@
   }
 
   .paragraphs {
-    /* margin-bottom: 70px; */
     max-width: 40vw;
   }
 
@@ -62,10 +66,4 @@
     margin: 0;
     font-size: 1.6em;
   }
-
-/* .paragraphs p {
-    font-size: 1.2em;
-  } */
-  
-  
 }

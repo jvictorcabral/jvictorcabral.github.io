@@ -1,5 +1,14 @@
+:root {
+
+  --background: #000000;
+
+  --ligth-background: #0d0d0d;
+
+  --purple: #4c0159;
+}
+
 #skills {
-  background-color: #000000;
+  background-color: var(--background);
   color: white;
 }
 
@@ -13,7 +22,6 @@
   justify-content: space-around;
   grid-template-columns: auto auto;
   margin-top: 10vh;
-  /* margin: 40px 0 70px; */
 }
 
 .flex-item {

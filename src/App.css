@@ -1,3 +1,20 @@
+:root {
+
+  --background: #000000;
+
+  --ligth-background: #0d0d0d;
+
+  --bar-background: #2e3033;
+
+  --purple: #4c0159;
+  
+  --shadow-purple: #700070a8;
+
+  --blue-gradient: #006098;
+
+  --pink-gradient: #cd4078;
+}
+
 body {
   color: white;
 }

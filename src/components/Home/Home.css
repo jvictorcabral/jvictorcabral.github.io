@@ -4,20 +4,8 @@
 
   --ligth-background: #0d0d0d;
 
-  --purple: #590159;
+  --purple: #4c0159;
 }
-
-/* #home::before {
-  background-image: url(/src/images/download.jpeg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  inset: 0px;
-  content: "";
-  opacity: 0.7;
-  position: absolute;
-  z-index: -1;
-} */
 
 #home {
   background-color: var(--background);
@@ -26,7 +14,7 @@
   height: 100vh;
   align-items: flex-start;
   justify-content: center;
-  background: linear-gradient(55deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(89,1,89,1) 100%);
+  background: linear-gradient(55deg, black 0%, black 50%, #4c0159 100%);
 }
 
 #home h1 {

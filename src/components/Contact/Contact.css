@@ -1,9 +1,19 @@
+:root {
+
+  --background: #000000;
+
+  --ligth-background: #0d0d0d;
+
+  --purple: #4c0159;
+  
+  --shadow-purple: #700070a8;
+}
+
 #contact {
-  background-color: #000000;
+  background-color:var(--background);
   color: white;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   gap: 20vh;
   min-height: 85vh;
 }
@@ -17,7 +27,6 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  /* margin-bottom: 100px; */
 }
 
 .links a {
@@ -34,7 +43,8 @@
 }
 
 .links a:hover {
-  box-shadow: inset 0 0 20px 5px #700070a8;
+  box-shadow: inset 0 0 20px 5px var(--shadow-purple);
+  transition: 0.3s ease-out;
 }
 
 #contact h2 {

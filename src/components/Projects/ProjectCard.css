@@ -1,3 +1,20 @@
+:root {
+
+  --background: #000000;
+
+  --ligth-background: #0d0d0d;
+
+  --bar-background: #2e3033;
+
+  --purple: #4c0159;
+  
+  --shadow-purple: #700070a8;
+
+  --blue-gradient: #006098;
+
+  --pink-gradient: #cd4078;
+}
+
 .no-project {
   display: flex;
   justify-content: center;
@@ -18,16 +35,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 280px;
-  width: 270px;
-  background-color: #000000;
-  border: 4px solid #590159;
+  height: 290px;
+  width: 280px;
+  background-color: var(--background);
+  border: 4px solid var(--purple);
   border-radius: 10px;
-  box-shadow: 0 0 20px #000;
+  box-shadow: 0 0 20px black;
   transition: 0.4s ease-out;
   position: relative;
   left: 0px;
-  /* transform: rotate3d(1, 1, 1, 10deg); */
   opacity: 0.7;
 }
 
@@ -37,7 +53,7 @@
 
 .card:hover {
   transform: scaleX(1.1) scaleY(1.1);
-  box-shadow: 0 0 20px #700070a8;
+  box-shadow: 0 0 20px var(--shadow-purple);
   z-index: 8;
   transition: 0.3s ease-out;
   opacity: 1;
@@ -74,7 +90,7 @@
 }
 
 .emptybar {
-  background-color: #2e3033;
+  background-color: var(--bar-background);
   width: 100%;
   height: 100%;
 }
@@ -87,9 +103,8 @@
   height: 100%;
   background: linear-gradient(
     90deg,
-    /* #111111 0%, */
-    #006098 0%,
-    rgb(205, 64, 120) 100%
+    var(--blue-gradient) 0%,
+    var(--pink-gradient) 100%
   );
   transition: 0.6s ease-out;
 }
@@ -122,10 +137,6 @@
   background-color: transparent;
   text-decoration: none;
 }
-
-/* .project-button a {
-  color: white;
-} */
 
 @media screen and (min-width: 768px) {
   .container {

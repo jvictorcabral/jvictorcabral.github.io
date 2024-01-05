@@ -1,5 +1,14 @@
+:root {
+
+  --background: #000000;
+
+  --ligth-background: #0d0d0d;
+
+  --purple: #4c0159;
+}
+
 #projects {
-  background-color: #0d0d0d;
+  background-color: var(--ligth-background);
   min-height: 100vh;
   justify-content: space-between;
 }
