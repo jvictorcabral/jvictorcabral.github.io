@@ -8,6 +8,12 @@ const Projects = () => {
     <section id="projects">
         <h1 className="h1-title">Projetos</h1>
         <ProjectCard />
+        <a
+        className="repositories-button"
+          href={'https://github.com/jvictorcabral?tab=repositories'}
+          target="_blank"
+          rel="noopener noreferrer"
+        >Repositórios no GitHub</a>
       </section>
   )
 }

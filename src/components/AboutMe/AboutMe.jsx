@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutMe.css"
-import aboutMeImg from "../../images/aboutme.jpeg"
+import aboutMeImg from "../../images/aboutme.jpg"
 
 const AboutMe = () => {
 
@@ -9,19 +9,19 @@ const AboutMe = () => {
         <h1 className="h1-title">Sobre mim</h1>
         <div className="about-content">
           <div className="paragraphs">
-            <h1>
+            {/* <h1>
               João Victor
-            </h1>
+            </h1> */}
             <p>
-              Tenho 19 anos e nasci em Campo Grande - MS. Atualmente estou cursando Desenvolvimento Web Full Stack pela Trybe.
+            Sou um Desenvolvedor Web Fullstack Jr. de 20 anos, formado na Trybe. Domino tecnologias front-end e back-end.
             </p>
 
             <p>
-              Sou um jovem apaixonado por aprender coisas novas, buscando sempre melhorias pessoal e profissionalmente.
+              Contribuí em projetos desafiadores, aplicando meu conhecimento para criar soluções eficientes. 
             </p>
 
             <p>
-              Trabalho e acredito em ações que possam gerar um impacto positivo na vida das pessoas.
+            Sou apaixonado por aprender, resolver problemas e acompanhar as tendências tecnológicas. Em busca de novas oportunidades para crescer profissionalmente e contribuir em projetos inovadores.
             </p>
           </div>
           <img src={aboutMeImg} alt="minha foto" />

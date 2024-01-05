@@ -1,26 +1,28 @@
+body {
+  color: white;
+}
+
 section {
   display: flex;
   flex-direction: column;
-  padding: 55px 8%;
+  padding: 60px 8%;
   margin: 0;
-  align-content: space-evenly;
-  justify-content: space-between;
+  justify-content: flex-start;
   min-height: 100vh;
 }
 
 .h1-title {
   display: flex;
   justify-content: center;
-  color: #17141d;
+  color: white;
   font-size: 2.2rem;
-  margin: 30px;
-
+  text-transform: uppercase;
 }
 
 
 @media screen and (min-width: 768px) {
   section {
-  padding: 55px 10%;
+  padding: 80px 10%;
   /* height: 100vh; */
 
   }

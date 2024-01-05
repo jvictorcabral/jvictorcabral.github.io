@@ -1,4 +1,23 @@
 #projects {
-  background-color: #ECB365;
+  background-color: #0d0d0d;
   min-height: 100vh;
+  justify-content: space-between;
+}
+
+.project-card {
+  margin-top: 1vh;
+}
+
+.repositories-button {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 1.3em;
+  color: white;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .project-card {
+    margin-top: 16vh;
+  }
 }

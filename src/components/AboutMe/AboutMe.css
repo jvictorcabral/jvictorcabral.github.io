@@ -1,5 +1,5 @@
 #about-me {
-  background-color: #ECB365;
+  background-color: #0d0d0d;
 }
 
 .about-content {
@@ -8,35 +8,36 @@
 }
 
 .paragraphs {
-  margin: 15px 0;
+  margin: 30px 0;
 }
 
-.paragraphs h1 {
+/* .paragraphs h1 {
   font-size: 25px;
   margin-top: 10px;
-}
+} */
 
 .paragraphs p {
-  font-size: 22px;
+  font-size: 1.25em;
   margin: 10px 0;
+  text-align: justify;
 }
 
 .about-content img {
   border-radius: 100px 50px;
-  margin-top: 20px;
   /* height: 50vh; */
+  border: 5px solid #590159;
+}
+
+.about-content img:hover {
+  box-shadow: 0 0 20px #700070a8;
 }
 
 @media screen and (min-width: 768px){
   .about-content {
     display: flex;
-    margin-bottom: 100px;
+    margin-top: 13vh;
     flex-direction: row;
-  }
-
-  .about-content img {
-  height: 50vh;
-  margin-left: 5%;
+    justify-content: space-around;
   }
   
   .paragraphs {
@@ -44,10 +45,27 @@
     flex-direction: column;
     justify-content: center;
   }
-  
-  .paragraphs h1 {
-    font-size: 30px;
+
+
+  .about-content img {
+    max-height: 60vh;
+    max-width: 45vw;
+    padding: 0;
   }
+
+  .paragraphs {
+    /* margin-bottom: 70px; */
+    max-width: 40vw;
+  }
+
+.paragraphs p {
+    margin: 0;
+    font-size: 1.6em;
+  }
+
+/* .paragraphs p {
+    font-size: 1.2em;
+  } */
   
   
 }

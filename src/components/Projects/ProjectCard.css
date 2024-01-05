@@ -10,8 +10,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 60px;
+  margin: 20px 0;
   flex-wrap: wrap;
 }
 
@@ -19,16 +18,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 310px;
-  width: 240px;
-  background-color: #17141d;
+  height: 280px;
+  width: 270px;
+  background-color: #000000;
+  border: 4px solid #590159;
   border-radius: 10px;
   box-shadow: 0 0 20px #000;
   transition: 0.4s ease-out;
   position: relative;
-  padding: 20px 25px;
   left: 0px;
-  transform: rotate3d(1, 1, 1, 10deg);
+  /* transform: rotate3d(1, 1, 1, 10deg); */
+  opacity: 0.7;
 }
 
 .card:not(:first-child) {
@@ -37,10 +37,10 @@
 
 .card:hover {
   transform: scaleX(1.1) scaleY(1.1);
-  background-color: #0f0d14;
-  box-shadow: 0 0 20px #064663;
+  box-shadow: 0 0 20px #700070a8;
   z-index: 8;
-  transition: 0.4s ease-out;
+  transition: 0.3s ease-out;
+  opacity: 1;
 }
 
 .card:hover ~ .card {
@@ -49,27 +49,28 @@
 }
 
 .title {
+  text-align: center;
   color: white;
-  font-size: 20px;
-  position: absolute;
+  font-size: 1.1em;
+  text-transform: uppercase;
 }
 
-.languages {
-  margin-top: 25px;
+.img-card {
+  border-radius: 5px 5px 0 0;
 }
 
 .card p {
-  color: rgb(179, 179, 179);
+  color: white;
   display: flex;
-  margin: 1px 0 5px;
+  padding: 0 20px 10px;
+  font-size: 1.03em;
 }
 
 .bar {
   position: absolute;
-  top: 100px;
-  left: 10%;
+  top: 147px;
   height: 5px;
-  width: 80%;
+  width: 100%;
 }
 
 .emptybar {
@@ -86,9 +87,9 @@
   height: 100%;
   background: linear-gradient(
     90deg,
-    #041c32 0%,
-    #064663 45%,
-    #ECB365 100%
+    /* #111111 0%, */
+    #006098 0%,
+    rgb(205, 64, 120) 100%
   );
   transition: 0.6s ease-out;
 }
@@ -118,16 +119,13 @@
   border: none;
   border-radius: 5px;
   margin-bottom: 10px;
-  background-color: #041c32;
+  background-color: transparent;
+  text-decoration: none;
 }
 
-.project-button:hover {
-  box-shadow: 0px 0px 10px #064663;
-}
-
-.project-button a {
+/* .project-button a {
   color: white;
-}
+} */
 
 @media screen and (min-width: 768px) {
   .container {

@@ -1,5 +1,5 @@
 #skills {
-  background-color: #064663;
+  background-color: #000000;
   color: white;
 }
 
@@ -12,8 +12,8 @@
   flex-wrap: wrap;
   justify-content: space-around;
   grid-template-columns: auto auto;
-
-  margin: 40px 0 70px;
+  margin-top: 10vh;
+  /* margin: 40px 0 70px; */
 }
 
 .flex-item {
@@ -21,7 +21,7 @@
   list-style: none;
   margin: 30px 0;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.2em;
 
 
 }
@@ -29,14 +29,14 @@
 @media screen and (min-width: 620px) {
 
   .flex-container {
-    /* margin-bottom: 100px; */
+    margin-top: 23vh;
     grid-template-columns: auto auto auto;
   }
 }
 
 @media screen and (min-width: 768px) {
     .flex-item {
-      font-size: 25px;
+      font-size: 2em;
     }
 }
 

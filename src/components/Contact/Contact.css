@@ -1,9 +1,11 @@
 #contact {
-  background-color: #064663;
+  background-color: #000000;
   color: white;
   display: flex;
   align-items: center;
-  height: 100vh;
+  /* justify-content: space-between; */
+  gap: 20vh;
+  min-height: 85vh;
 }
 
 #contact .h1-title {
@@ -15,7 +17,7 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 
 .links a {
@@ -26,10 +28,18 @@
   color: white;
   font-size: larger;
   font-weight: 900;
+  width: 80px;
+  height: 80px;
+  border-radius: 40%;
+}
+
+.links a:hover {
+  box-shadow: inset 0 0 20px 5px #700070a8;
 }
 
 #contact h2 {
-  font-size: 30px;
+  font-size: 1.9em;
+  text-align: center;
 }
 
 .links img {
@@ -37,4 +47,19 @@
   height: 50px;
   margin-bottom: 8px;
   width: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  #contact h2 {
+    font-size: 2.5em;
+  }
+
+  .links a {
+    font-size: 1.5em;
+  }
+
+  .links img {
+    height: 60px;
+    width: 60px;
+  }
 }

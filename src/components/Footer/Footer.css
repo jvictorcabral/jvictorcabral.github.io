@@ -1,10 +1,10 @@
 footer {
   align-items: center;
-  background-color: #04293A;
+  background-color: #0d0d0d;
   color: white;
   display: flex;
   justify-content: center;
-  height: 40px;
+  height: 15vh;
   width: 100%;
   bottom: 0;
   padding: 40px;
