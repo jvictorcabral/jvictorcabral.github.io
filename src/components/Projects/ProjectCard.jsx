@@ -14,7 +14,6 @@ const ProjectCard = () => {
       >
       <div className="card">
         <img className="img-card" src={project.img} alt="foto do projeto"/>
-        { console.log({project}) }
         <div className="bar">
           <div className="emptybar"></div>
           <div className="filledbar"></div>

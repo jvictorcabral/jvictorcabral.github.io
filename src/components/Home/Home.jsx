@@ -5,9 +5,9 @@ const Home = () => {
 
   return (
     <section id="home">
-      <h3>Bem vindo(a)! Me chamo</h3>
-      <h1>João Victor Cabral Gonçalves</h1>
-      <h2>Sou um Desenvolvedor Full Stack Jr.</h2>
+      <h3 className="welcome-title">Bem vindo(a)! Me chamo</h3>
+      <h1 className="name-title">João Victor Cabral Gonçalves</h1>
+      <h2 className="subtitle">Sou um Desenvolvedor Full Stack Jr.</h2>
     </section>
   )
 }

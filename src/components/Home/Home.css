@@ -17,30 +17,57 @@
   background: linear-gradient(55deg, black 0%, black 50%, #4c0159 100%);
 }
 
-#home h1 {
-  font-size: 2.29rem;
+.name-title {
+  font-size: 2em;
   margin: 35px 0;
+  animation: appearHome 1s ease-in-out;
 }
 
-#home h2 {
-  font-size: 1.6rem;
+.welcome-title {
+  font-size: 1.2em;
+  animation: appearHome 1s ease-in-out;
 }
 
-#home h3 {
-  font-size: 1.4rem;
+.subtitle {
+  font-size: 1.6em;
+  animation: appearHome 1s ease-in-out;
+}
+
+@keyframes appearHome {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  #home h1 {
-    font-size: 3.2rem;
+  .name-title {
+    font-size: 2.9em;
     margin: 20px 0;
   }
   
-  #home h2 {
-    font-size: 3.2rem;
+  .subtitle {
+    font-size: 2.31em;
   }
   
-  #home h3 {
-    font-size: 2.2rem;
+  .welcome-title {
+    font-size: 2.2em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .name-title {
+    font-size: 3.1em;
+  }
+  
+  .subtitle {
+    font-size: 2.5em;
+  }
+  
+  .welcome-title {
+    font-size: 2.3em;
   }
 }

@@ -15,8 +15,29 @@
   --pink-gradient: #cd4078;
 }
 
+/* width */
+::-webkit-scrollbar {
+  background: black;
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px var(--bar-background); */
+  background: black;
+  /* border-radius: 10px; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--purple);
+  border-radius: 10px;
+}
+
 body {
   color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 section {
@@ -34,6 +55,29 @@ section {
   color: white;
   font-size: 2.2rem;
   text-transform: uppercase;
+  animation: appearTitles 1s linear;
+  animation-timeline: view();
+  animation-range: cover -2% cover 33%;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: .6;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes appearTitles {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 

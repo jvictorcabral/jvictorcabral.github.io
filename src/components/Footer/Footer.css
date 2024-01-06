@@ -11,6 +11,7 @@
 
 footer {
   align-items: center;
+  text-align: center;
   background-color: var(--ligth-background);
   color: white;
   display: flex;

@@ -2,7 +2,7 @@ import React from "react";
 import "./Contact.css";
 import gitHubLogo from "../../images/github-logo.png";
 import LinkedinLogo from "../../images/linkedin-logo.png"
-import emailLogo from "../../images/email-logo.png"
+import whatsLogo from "../../images/whatsapp-logo.png"
 
 const Contact = () => {
   return (
@@ -16,7 +16,7 @@ const Contact = () => {
 
         <a href="https://github.com/jvictorcabral" target="_blank" rel="noopener noreferrer"><img src={gitHubLogo} alt="GitHub Logo" />GitHub</a>
 
-        <a href="mailto:joaovictorcgjvcg@gmail.com"><img src={emailLogo} alt="Email Logo" />Email</a>
+        <a href="https://api.whatsapp.com/send?phone=5567998114906" target="_blank" rel="noopener noreferrer"><img src={whatsLogo} alt="Whatsapp Logo" />Whatsapp</a>
       </div>
     </section>
   );
