@@ -4,7 +4,17 @@
 
   --ligth-background: #0d0d0d;
 
+  --bar-background: #2e3033;
+
   --purple: #4c0159;
+
+  --ligth-purple: #662383;
+  
+  --shadow-purple: #700070a8;
+
+  --blue-gradient: #006098;
+
+  --pink-gradient: #cd4078;
 }
 
 #home {
@@ -14,7 +24,8 @@
   height: 100vh;
   align-items: flex-start;
   justify-content: center;
-  background: linear-gradient(55deg, black 0%, black 50%, #4c0159 100%);
+  background: linear-gradient(55deg, black 0%, black 50%, var(--ligth-purple) 100%);
+  gap: 0;
 }
 
 .name-title {

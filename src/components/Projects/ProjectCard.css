@@ -44,7 +44,6 @@
   transition: 0.4s ease-out;
   position: relative;
   left: 0px;
-  opacity: 0.7;
   animation: appear 1s linear;
   animation-timeline: view();
   animation-range: cover -2% cover 33%;
@@ -136,7 +135,6 @@
   padding: 10px;
   border: none;
   border-radius: 5px;
-  margin-bottom: 10px;
   background-color: transparent;
   text-decoration: none;
 }
@@ -154,28 +152,22 @@
   .bar {
     top: 117px;
   }
+
+  .languages {
+    font-size: .8em;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     flex-direction: row;
-    margin: 0 0 100px ;
-  }
-  
-  .card:hover {
-    transform: translateY(-20px);
-    transform: scaleX(1.1) scaleY(1.1);
-    transition: 0.4s ease-out;
-  }
-  
-  .card:hover ~ .card {
-    position: relative;
-    left: 50px;
-    transition: 0.4s ease-out;
   }
 
+  .card {
+    opacity: 0.7;
+  }
+  
   .card:not(:first-child) {
-    margin-left: -50px;
     margin-top: 0;
   }
 }

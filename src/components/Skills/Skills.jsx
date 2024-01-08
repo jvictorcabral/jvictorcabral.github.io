@@ -5,7 +5,7 @@ const Skills = () => {
 
   return (
     <section id="skills">
-        <h1 className="h1-title">habilidades</h1>
+        <h1 className="h1-title">Conhecimentos</h1>
         <ul className="flex-container">
           <li className="flex-item">HTML</li>
           <li className="flex-item">CSS</li>

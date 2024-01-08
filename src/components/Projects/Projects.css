@@ -9,27 +9,30 @@
 
 #projects {
   background-color: var(--ligth-background);
-  min-height: 100vh;
-  justify-content: space-between;
 }
 
-.project-card {
-  margin-top: 1vh;
-}
+/* .project-card {
+  margin: 60px;
+} */
 
 .repositories-button {
-  text-decoration: underline;
+  text-decoration: none;
   text-align: center;
   font-size: 1.3em;
   color: white;
-  margin-top: 15px;
   animation: appear 1s linear;
   animation-timeline: view();
   animation-range: cover -2% cover 33%;
+  transition: 0.2s ease-in-out;
+}
+
+.repositories-button:hover {
+  transition: 0.2s ease-in-out;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 768px) {
-  .project-card {
-    margin-top: 16vh;
-  }
+  /* .project-card {
+    margin: 80px 0;
+  } */
 }

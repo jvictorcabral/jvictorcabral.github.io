@@ -7,6 +7,8 @@
   --bar-background: #2e3033;
 
   --purple: #4c0159;
+
+  --ligth-purple: #662383;
   
   --shadow-purple: #700070a8;
 
@@ -30,7 +32,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--purple);
+  background: var(--ligth-purple);
   border-radius: 10px;
 }
 
@@ -43,10 +45,12 @@ body {
 section {
   display: flex;
   flex-direction: column;
-  padding: 60px 8%;
+  padding: 80px 8%;
   margin: 0;
   justify-content: flex-start;
-  min-height: 100vh;
+  align-items: center;
+  gap: 80px;
+  /* min-height: 100vh; */
 }
 
 .h1-title {
@@ -55,8 +59,8 @@ section {
   color: white;
   font-size: 2.2rem;
   text-transform: uppercase;
-  animation: appearTitles 1s linear;
-  animation-timeline: view();
+  animation: appearTitles 1ms linear both;
+  animation-timeline: view(y);
   animation-range: cover -2% cover 33%;
 }
 
@@ -83,7 +87,8 @@ section {
 
 @media screen and (min-width: 768px) {
   section {
-  padding: 80px 10%;
+  padding: 100px 10%;
+  gap: 100px;
   /* height: 100vh; */
 
   }
